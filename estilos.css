@@ -118,6 +118,53 @@ body{
 
     box-shadow:0 0 25px rgba(255,255,255,0.3);
 }
-footer{
-    text-align:center;
+html, body{
+    min-height: 100vh;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(180deg, #add4d7, rgba(13, 0, 255, 0.607));
+    background-attachment: fixed;
+}
+
+@media (max-width: 600px){
+
+    .titulo h1{
+        font-size: 1.7rem;
+        letter-spacing: 1px;
+        margin-top: 25px;
+    }
+
+    .titulo p{
+        font-size: 0.9rem;
+    }
+
+    .viaje{
+        width: 80%;
+        padding: 16px;
+        margin: 18px auto;
+        border-radius: 18px;
+    }
+
+    .viaje h2{
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+
+    .galeria{
+        width: 85%;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .galeria img,
+    .galeria video{
+        height: 260px;
+    }
+
+    .galeria img:hover,
+    .galeria video:hover{
+        transform: none;
+    }
 }
